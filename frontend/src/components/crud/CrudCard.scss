@@ -1,0 +1,57 @@
+.crud-card{
+    &__heaed {
+        a{
+            color: purple   ;
+        }
+    h2{
+        font-family: "Cinzel", serif;
+    }}
+    .Crud__Card{
+        position: relative;
+
+        padding: 10px;
+        &__body{ 
+            padding: 350px 20px 50px;
+            background: #f3f4f5;
+        }
+        &__img{
+            position: relative;
+            margin-bottom: -75%;
+            
+        }
+        &__hidden{
+            transition: all ease 0.5s;
+            position: absolute;
+            bottom:20px;
+            left: 10%;
+            width: 80%;
+            padding: 5%;
+            height: 40%;
+            background: #fff;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            
+            opacity: 0;
+            span{
+                color: purple;
+            }
+            p{
+                color: rgb(255, 230, 0);
+            }
+            button{
+                width: 80%;
+                margin: auto;
+                padding: 20px 0px;
+                background: purple;
+                border-radius: 0;
+                color: #fff ;
+            }
+        }
+        &:hover{
+            .Crud__Card__hidden{
+                opacity: 1;
+            }
+        }
+    }
+}
